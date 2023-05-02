@@ -12,6 +12,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run Renovate
-        uses: renovatebot/renovate@30.12.3
+        uses: renovatebot/renovatebot/renovate@v27
         with:
           token: ${{ secrets.GIT_TOKEN }}
