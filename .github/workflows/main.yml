@@ -12,6 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run Renovate
-        uses: renovatebot/renovate@27.11.1
+        uses: renovatebot/github-action@v36.0.0
         with:
+          useSlim: false
           token: ${{ secrets.GITHUB_TOKEN }}
