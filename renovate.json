@@ -1,8 +1,9 @@
 {
   "extends": ["config:base"],
+  "token": "${{ secrets.REN_TOKEN }}",
   "platform": "github",
   "repositories": [
-    "owner/repo"
+    "yasserfaraazkhan/mattermost-test-management"
   ],
   "packageRules": [
     {
