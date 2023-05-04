@@ -1,12 +1,23 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  "automerge": true,
-  "major": {
-    "automerge": true,
-    "labels": ["major"]
-  },
-  "labels": [
-    "dependencies"
+  "platform": "github",
+  "repositories": [
+    "owner/repo"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "updateTypes": [
+        "minor",
+        "patch"
+      ],
+      "packagePatterns": [
+        "^deno$",
+        "^deno-"
+      ]
+    }
   ]
 }
